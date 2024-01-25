@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_nav_div_navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_nav_div_navbar img{
+    width: 1.2rem;
+    max-height: 1rem;
+    color: black;
+}
