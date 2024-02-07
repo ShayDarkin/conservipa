@@ -1,6 +1,6 @@
 "o que fazer?";
 
-"1º passar as ul das img para aqui, pegando do database, para evitando dessa maneria hackers";
+"1º passar as ul das img para aqui, pegando do database, para evitando dessa maneira hackers";
 "2º ";
 
 function captureAndCreateCards() {
@@ -42,3 +42,18 @@ function createCard(liElement, trail) {
 
 // Chamar a função para capturar e criar os cards quando necessário
 captureAndCreateCards();
+
+
+function enviarParaWhatsApp(numero, mensagem) {
+    // Certifique-se de incluir o código do país no número (por exemplo, "+55" para o Brasil)
+    const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`;
+  
+    // Abre a URL no WhatsApp
+    window.open(url, '_blank');
+  }
+  
+  // Exemplo de uso:
+  const numeroDoContato = '+5565984010431'; // Substitua pelo número de telefone desejado
+  const mensagemParaEnviar = 'Olá! Estou entrando em contato pois gostaria de conhecer melhor os seus serviços'; // Substitua pela mensagem desejada
+  
+  enviarParaWhatsApp(numeroDoContato, mensagemParaEnviar);
